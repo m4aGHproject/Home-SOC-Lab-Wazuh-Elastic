@@ -1,0 +1,30 @@
+<group name="custom_rules,">
+    <rule id="900001" level="8">
+        <decoded_as>json</decoded_as>
+        <description>Suspicious PowerShell Command Detected</description>
+        <match>Powershell.exe</match>
+        <regex>Invoke-WebRequest|IEX|FromBase64String</regex>
+        <mitre>
+            <id>T1059.001</id>
+        </mitre>
+    </rule>
+
+    <rule id="900002" level="10">
+        <description>LSASS Access Attempt (Possible Mimikatz)</description>
+        <match>lsass.exe</match>
+        <regex>process_access</regex>
+        <mitre>
+            <id>T1003.001</id>
+        </mitre>
+    </rule>
+
+    <rule id="900003" level="7">
+        <description>Brute Force Authentication Attempt</description>
+        <regex>failed password|authentication failure</regex>
+        <frequency>5</frequency>
+        <timeframe>60</timeframe>
+        <mitre>
+            <id>T1110</id>
+        </mitre>
+    </rule>
+</group>
