@@ -78,13 +78,13 @@ Python • Bash • PowerShell • GitHub Actions • Sigma
 ---
 
 ## 📈 GitHub Activity  
-![Streak Stats](https://streak-stats.demolab.com?user=YOUR_USERNAME&theme=default)  
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=YOUR_USERNAME&theme=github)  
+![Streak Stats](https://streak-stats.demolab.com?user=m4aGHproject&theme=default)  
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?m4aGHproject&theme=github)  
 
 ---
 
 ## 🤝 Connect With Me
-**LinkedIn:** *Add your link here*  
-**Email:** *Your email here*  
+**LinkedIn:**(https://www.linkedin.com/in/maiyaz/)
+**Email:** (moaiyaz@icloud.com)
 
 Always open to collaborating on detection engineering, SOC automation, or cloud security projects.
