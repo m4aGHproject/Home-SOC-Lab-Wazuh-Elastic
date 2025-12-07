@@ -1,5 +1,4 @@
-├── agents/
-│   ├── windows/# Windows Agent Install Guide
+windows/# Windows Agent Install Guide
 
 1. Download the Wazuh agent from:   `https://wazuh.com/downloads`
 2. Install using the default settings.
@@ -8,7 +7,7 @@
 5. Install Sysmon: ``` sysmon64.exe -accepteula -i sysmon.xml```
 6. Confirm logs are flowing. ```
 
-│   ├── linux/
+
 # Linux Agent Install Guide
 
 ```bash curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH |
@@ -26,7 +25,6 @@ sudo systemctl start auditd
 
 Confirm agent: /var/ossec/bin/agent-control -i
 
-│   └── hardening-checklist.md
 
 # `/agents/hardening-checklist.md`
 
