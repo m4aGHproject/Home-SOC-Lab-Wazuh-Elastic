@@ -1,17 +1,12 @@
-# Home SOC Lab — Wazuh + Elastic
+# Lab Docs — Home SOC Lab
 
-Hands-on SOC lab built with Wazuh, Elastic, Filebeat/Winlogbeat, and Windows endpoints.
+## Architecture
+- Wazuh manager
+- Elastic Stack (Elasticsearch + Kibana)
+- Filebeat / Winlogbeat agents on endpoints
+- Docker used for quick deployment examples
 
-## Contents
-- `deployment/` — Docker-compose for quick lab deployment (placeholders)
-- `detections/` — Sigmas and Wazuh rules
-- `logs/` — Sample logs for testing
-- `docs/` — Lab setup and walkthroughs
-
-## Quickstart
-1. Review `docs/README.md` for architecture and setup steps.
-2. Deploy services with Docker Compose (or manual install).
-3. Ship logs via Filebeat/Winlogbeat and validate detections.
-
-## Tech
-Wazuh • Elastic • Filebeat • Winlogbeat • Docker • Sigma
+## Walkthroughs
+- Ingest Windows event logs
+- Create Sigma rules and convert to Wazuh
+- Tune alerts and reduce false positives

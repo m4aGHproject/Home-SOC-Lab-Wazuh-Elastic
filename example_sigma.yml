@@ -1,0 +1,13 @@
+title: Possible Brute Force via Failed Logons
+id: 0001-jarvis
+status: experimental
+description: Detect multiple failed logon attempts followed by success on Windows Event Logs.
+author: Jarvis
+logsource:
+  product: windows
+  service: security
+detection:
+  selection:
+    EventID: 4625
+  condition: selection | count() by src_ip > 5 within 5m
+level: high
